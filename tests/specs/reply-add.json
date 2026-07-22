@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Add New Reply",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Initiates quick-reply creation flow"
+            }
+          }
+        ],
+        "send": {
+          "callback": "reply:add"
+        }
+      }
+    ]
+  }
+]
