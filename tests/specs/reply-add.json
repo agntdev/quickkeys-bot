@@ -1,19 +1,20 @@
 [
   {
-    "name": "Add New Reply",
+    "name": "Add New Reply starts creation flow",
     "steps": [
       {
+        "send": { "callback": "reply:add" },
         "expect": [
+          {
+            "method": "answerCallbackQuery"
+          },
           {
             "method": "sendMessage",
             "payload": {
-              "text": "Initiates quick-reply creation flow"
+              "text": "What should this reply be called?"
             }
           }
-        ],
-        "send": {
-          "callback": "reply:add"
-        }
+        ]
       }
     ]
   }

@@ -1,19 +1,17 @@
 [
   {
-    "name": "/my",
+    "name": "/my shows empty state when no replies",
     "steps": [
       {
+        "send": { "text": "/my" },
         "expect": [
           {
             "method": "sendMessage",
             "payload": {
-              "text": "Access personal quick-replies menu (list, add, edit, delete, export)"
+              "text": "No quick replies yet.\n\nTap ➕ Add new to create one."
             }
           }
-        ],
-        "send": {
-          "text": "/my"
-        }
+        ]
       }
     ]
   }
