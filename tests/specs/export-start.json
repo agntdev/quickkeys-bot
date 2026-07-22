@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Export Set",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Initiates export/share process for personal sets"
+            }
+          }
+        ],
+        "send": {
+          "callback": "export:start"
+        }
+      }
+    ]
+  }
+]
