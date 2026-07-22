@@ -1,19 +1,20 @@
 [
   {
-    "name": "Export Set",
+    "name": "Export Set starts export flow",
     "steps": [
       {
+        "send": { "callback": "export:start" },
         "expect": [
+          {
+            "method": "answerCallbackQuery"
+          },
           {
             "method": "sendMessage",
             "payload": {
-              "text": "Initiates export/share process for personal sets"
+              "text": "You have no replies to export.\n\nCreate some replies first."
             }
           }
-        ],
-        "send": {
-          "callback": "export:start"
-        }
+        ]
       }
     ]
   }

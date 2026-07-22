@@ -5,8 +5,41 @@ import type { StorageAdapter } from "grammy";
 // The per-chat session shape (ephemeral conversation state only). Extend as the
 // bot grows. Durable domain data must NOT live here — use the toolkit's
 // persistent storage (see AGENTS.md).
+export interface PersonalReply {
+  id: string;
+  name: string;
+  buttonText: string;
+  payload: string;
+}
+
+export interface SharedReply {
+  id: string;
+  buttonText: string;
+  payload: string;
+  ownerApproved: boolean;
+}
+
+export interface ExportRecord {
+  id: string;
+  userId: number;
+  setName: string;
+  shareCode: string;
+  isPublic: boolean;
+  pendingApproval: boolean;
+}
+
 export interface Session {
-  // example: step?: "awaiting_amount";
+  step?: string;
+  personalReplies?: PersonalReply[];
+  flowData?: {
+    replyName?: string;
+    buttonText?: string;
+    payload?: string;
+    editId?: string;
+    deleteId?: string;
+    setName?: string;
+    visibility?: "public" | "private";
+  };
 }
 
 export type Ctx = BotContext<Session>;
