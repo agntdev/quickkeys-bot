@@ -8,7 +8,7 @@ registerMainMenuItem({ label: "⚙️ Owner", data: "owner:admin", order: 30 });
 
 const composer = new Composer<Ctx>();
 
-const WELCOME = "👋 Welcome to QuickReply Manager!\n\nTap a button below to manage your quick replies.";
+const WELCOME = "👋 Welcome to QuickKeys!\n\nTap a button below to manage your quick replies.";
 
 composer.command("start", async (ctx) => {
   ctx.session.step = undefined;
