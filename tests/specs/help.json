@@ -8,7 +8,7 @@
           {
             "method": "sendMessage",
             "payload": {
-              "text": "QuickReply Manager lets you save and reuse text replies.\n\n• 📋 My replies — create, edit, delete, and export personal quick replies\n• 🌐 Shared — use buttons from the shared set maintained by the owner\n\nTap /start to open the menu."
+              "text": "QuickKeys lets you save and reuse text replies.\n\n• 📋 My replies — create, edit, delete, and export personal quick replies\n• 🌐 Shared — use buttons from the shared set maintained by the owner\n\nTap /start to open the menu."
             }
           }
         ]

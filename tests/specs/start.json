@@ -7,7 +7,7 @@
         "expect": [
           {
             "method": "sendMessage",
-            "payload": { "text": "👋 Welcome to QuickReply Manager!\n\nTap a button below to manage your quick replies." }
+            "payload": { "text": "👋 Welcome to QuickKeys!\n\nTap a button below to manage your quick replies." }
           }
         ]
       }

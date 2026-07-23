@@ -5,7 +5,7 @@ import { inlineButton, inlineKeyboard } from "../toolkit/index.js";
 const composer = new Composer<Ctx>();
 
 const HELP =
-  "QuickReply Manager lets you save and reuse text replies.\n\n" +
+  "QuickKeys lets you save and reuse text replies.\n\n" +
   "• 📋 My replies — create, edit, delete, and export personal quick replies\n" +
   "• 🌐 Shared — use buttons from the shared set maintained by the owner\n\n" +
   "Tap /start to open the menu.";
